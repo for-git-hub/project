@@ -63,14 +63,14 @@
 
 
 
-"use strict";
+// "use strict";
 
-console.log(4 + "-object");
-console.log(4 + +'5');
+// console.log(4 + "-object");
+// console.log(4 + +'5');
 
 
-let incr = 10,
-    decr = 10;
+// let incr = 10,
+//     decr = 10;
 
 // incr++;
 // decr--;
@@ -81,26 +81,51 @@ let incr = 10,
 // console.log(++incr);
 // console.log(--decr);
 
-console.log(5%2);
+// console.log(5%2);
 
-console.log(2*4 == 8);
-console.log(2*4 == '8');
-console.log(2*4 === '8');
+// console.log(2*4 == 8);
+// console.log(2*4 == '8');
+// console.log(2*4 === '8');
 
 
 // && - "И"
 // || - "Или"
 // !isClose - "Отрицание false становиться true"
 
-const isChecked = true,
-      isClose = true;
+// const isChecked = true,
+//       isClose = true;
 
-console.log(isChecked && isClose);
-
-
+// console.log(isChecked && isClose);
 
 
 
+
+"use strict"
+
+// alert('Сколько фильмов вы уже посмотрели?') = count;
+
+const numberofFilms = +prompt('Сколько фильмов вы уже посмотрели?', "");
+
+const personalMovieDB = {
+    counts: numberofFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+
+
+};
+
+const a = prompt('Один из последних фильмов?', ''),
+      b = +prompt('На сколько вы оцените его?', ''),
+      c = prompt('Один из последних фильмов?', ''),
+      d = +prompt('На сколько вы оцените его?', '');
+
+
+      personalMovieDB.movies[a] = b;
+      personalMovieDB.movies[c] = d;
+
+      console.log(personalMovieDB);
 
 
 
